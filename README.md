@@ -31,25 +31,6 @@ VortexMobs ships an adaptive boss path as the first prestige feature. The boss e
 - Server: `/vortexmobs brain`, `/vortexmobs spawnboss`, `/vortexmobs resetbrain confirm`, `/vortexmobs reload`
 - Fabric: `/vortexmobs brain`, `/vortexmobs spawnboss`, `/vortexmobs resetbrain confirm`
 
-## Build
-
-1. Bootstrap the Gradle wrapper with Gradle `8.11.1`.
-2. Run `gradlew.bat build`.
-3. Collect jars with `gradlew.bat copyAllJars` or generate the release archive with `gradlew.bat zipRelease`.
-
-Deliverables are copied into each module's `jar/` folder and also the root `jar/` folder. The full release bundle is written as `jar/VortexMobs-release-<version>.zip`.
-
-Root release outputs:
-
-- `jar/VortexMobs-paper-folia-<version>.jar`
-- `jar/VortexMobs-purpur-<version>.jar`
-- `jar/VortexMobs-spigot-<version>.jar`
-- `jar/VortexMobs-fabric-1.21.x-<version>.jar`
-- `jar/VortexMobs-fabric-26.x-<version>.jar`
-- `jar/VortexMobs-release-<version>.zip`
-
-The Paper, Purpur, Folia, and Spigot jars are intentionally the same implementation binary under platform-specific names because the code stays on the common Spigot API and detects Folia scheduling reflectively at runtime. Fabric remains version-split because the upstream Minecraft and Fabric APIs diverge between `1.21.x` and `26.x`.
-
 ## Smart upgrade path
 
 This initial release is structured so the next updates can be layered in without breaking save data:
