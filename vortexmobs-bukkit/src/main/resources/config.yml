@@ -1,0 +1,41 @@
+# VortexMobs support: https://discord.gg/Tya84XrgSF
+# This brain is server-specific. The longer your players fight, the smarter your mobs become.
+
+adaptive-learning:
+  enabled: true
+  auto-track-hostile-spawns: true
+  auto-track-existing-on-enable: true
+  update-interval-ticks: 10
+  save-interval-ticks: 2400
+  max-tracked-mobs: 500
+  scan-radius: 14.0
+  announce-stage-upgrades: true
+
+tracked-mobs:
+  entity-whitelist:
+    - ZOMBIE
+    - HUSK
+    - DROWNED
+    - SKELETON
+    - STRAY
+    - SPIDER
+    - CAVE_SPIDER
+    - PILLAGER
+    - ZOMBIFIED_PIGLIN
+    - MAGMA_CUBE
+    - SLIME
+  entity-blacklist:
+    - ENDER_DRAGON
+    - WITHER
+
+boss:
+  enabled: true
+  name: '&4&lNeural Sovereign'
+  entity-type: HUSK
+  base-health: 300.0
+  acquire-range: 28.0
+  bar-color: RED
+  summon-minions: true
+
+debug:
+  log-adaptations: false

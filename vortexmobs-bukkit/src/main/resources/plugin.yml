@@ -1,0 +1,21 @@
+name: VortexMobs
+version: ${version}
+description: Adaptive NeuralNetworkMobs combat AI that learns from your server's player tactics.
+main: com.sauron.vortexmobs.bukkit.VortexMobsPlugin
+api-version: "1.21"
+folia-supported: true
+load: POSTWORLD
+authors: [Sauron]
+website: https://discord.gg/Tya84XrgSF
+commands:
+  vortexmobs:
+    description: VortexMobs admin command
+    aliases: [vmobs, nmobs, neuralmobs]
+    usage: /<command> help
+permissions:
+  vortexmobs.use:
+    description: View VortexMobs brain information
+    default: true
+  vortexmobs.admin:
+    description: Manage adaptive bosses and reset the brain
+    default: op

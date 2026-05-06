@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "vortexmobs",
+  "version": "${version}",
+  "name": "VortexMobs",
+  "description": "Adaptive Fabric mob AI that learns from player tactics and evolves a server-unique boss.",
+  "authors": [
+    "Sauron"
+  ],
+  "contact": {
+    "homepage": "https://discord.gg/Tya84XrgSF"
+  },
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.sauron.vortexmobs.fabric.VortexMobsFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loaderVersion}",
+    "minecraft": "~${minecraftVersion}",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}

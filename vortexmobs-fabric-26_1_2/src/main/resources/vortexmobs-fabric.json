@@ -1,0 +1,12 @@
+{
+  "updateIntervalTicks": 10,
+  "saveIntervalTicks": 2400,
+  "maxTrackedMobs": 400,
+  "scanRadius": 16.0,
+  "verticalScanRadius": 8.0,
+  "bossBaseHealth": 300.0,
+  "bossAcquireRange": 28.0,
+  "summonMinions": true,
+  "announceStageUpgrades": true,
+  "debugLogging": false
+}

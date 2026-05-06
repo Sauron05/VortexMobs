@@ -1,0 +1,13 @@
+.gradle/
+.wiki-publish/
+.vscode/
+jar/
+build/
+**/build/
+
+*.log
+*.tmp
+*.class
+
+.idea/
+out/
